@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>メニュー・料金｜ALTO（アルト）東京・渋谷のヘアサロン</title>
+    <meta
+      name="description"
+      content="ALTO（アルト）のメニュー・料金一覧。カット、カラー、パーマ・縮毛矯正、ヘッドスパ・トリートメント、お得なクーポンをご案内します。"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Oswald:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.1/dist/css/yakuhanjp.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="no-js">
+    <!-- ============ header ============ -->
+    <header class="header" id="js-header">
+      <div class="header__inner">
+        <a class="header__logo logo" href="index.html">
+          <span class="logo__mark">ALTO</span>
+          <span class="logo__sub">HAIR SALON SHIBUYA</span>
+        </a>
+
+        <nav class="header__nav gnav" id="js-gnav" aria-label="グローバルナビゲーション">
+          <ul class="gnav__list">
+            <li class="gnav__item" style="--i: 1"><a class="gnav__link" href="index.html">Home</a></li>
+            <li class="gnav__item" style="--i: 2">
+              <a class="gnav__link" href="index.html#concept">Concept</a>
+            </li>
+            <li class="gnav__item" style="--i: 3">
+              <a class="gnav__link gnav__link--current" href="menu.html">Menu</a>
+            </li>
+            <li class="gnav__item" style="--i: 4">
+              <a class="gnav__link" href="index.html#gallery">Style</a>
+            </li>
+            <li class="gnav__item" style="--i: 5">
+              <a class="gnav__link" href="stylist.html">Stylist</a>
+            </li>
+            <li class="gnav__item" style="--i: 6">
+              <a class="gnav__link" href="index.html#access">Salon</a>
+            </li>
+            <li class="gnav__item" style="--i: 7">
+              <a class="gnav__link" href="contact.html">Reserve</a>
+            </li>
+          </ul>
+
+          <div class="gnav__foot">
+            <a class="gnav__tel" href="tel:0312345678">03-1234-5678</a>
+            <p class="gnav__note">受付 11:00 - 20:00 / 火曜定休</p>
+            <a class="btn-alto btn-alto--accent" href="contact.html"><span>Reserve</span></a>
+          </div>
+        </nav>
+
+        <div class="header__actions">
+          <a class="header__tel" href="tel:0312345678">
+            <span class="header__tel-number">03-1234-5678</span>
+            <span class="header__tel-note">11:00 - 20:00 / 火曜定休</span>
+          </a>
+          <a class="header__cta btn-alto btn-alto--accent btn-alto--sm" href="contact.html">
+            <span>Reserve</span>
+          </a>
+          <button
+            class="drawer-toggle"
+            id="js-drawer-toggle"
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+            aria-controls="js-gnav"
+          >
+            <span class="drawer-toggle__bar"></span>
+            <span class="drawer-toggle__bar"></span>
+            <span class="drawer-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ page head ============ -->
+      <div
+        class="page-head"
+        style="
+          background-image: url('assets/img/photo-1633681926022-84c23e8cb2d6.jpg');
+        "
+      >
+        <div class="page-head__inner">
+          <h1 class="page-head__en">Menu</h1>
+          <span class="page-head__ja">メニュー・料金</span>
+        </div>
+      </div>
+
+      <nav class="breadcrumb-alto" aria-label="パンくずリスト">
+        <div class="l-container">
+          <ol class="breadcrumb-alto__list">
+            <li class="breadcrumb-alto__item"><a href="index.html">HOME</a></li>
+            <li class="breadcrumb-alto__item" aria-current="page">MENU</li>
+          </ol>
+        </div>
+      </nav>
+
+      <!-- ============ price list ============ -->
+      <section class="l-section">
+        <div class="l-container--narrow">
+          <div class="section-title" data-aos="fade-up">
+            <span class="section-title__num">01</span>
+            <span class="section-title__en">Price List</span>
+            <span class="section-title__ja">料金一覧</span>
+            <p class="section-title__lead">
+              表示価格はすべて税込です。シャンプー・ブロー・スタイリング料金を含みます。
+              髪の長さ・量により追加料金をいただく場合がございます。
+            </p>
+          </div>
+
+          <!-- cut -->
+          <div class="menu-list__group" id="cut" data-aos="fade-up">
+            <div class="menu-list__head">
+              <span class="menu-list__head-en">Cut</span>
+              <span class="menu-list__head-ja">カット</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">
+                    デザインカット<span class="menu-item__tag">Popular</span>
+                  </p>
+                  <p class="menu-item__desc">
+                    骨格とクセを見極め、乾かすだけで決まる形に。約60分。
+                  </p>
+                </div>
+                <p class="menu-item__price">¥6,600</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">
+                    メンズカット<span class="menu-item__tag">Popular</span>
+                  </p>
+                  <p class="menu-item__desc">スタイリング剤の使い方までレクチャー。約50分。</p>
+                </div>
+                <p class="menu-item__price">¥5,500</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">前髪カット</p>
+                  <p class="menu-item__desc">当店ご利用のお客様は1ヶ月以内無料。約15分。</p>
+                </div>
+                <p class="menu-item__price">¥1,100</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">キッズカット（小学生以下）</p>
+                  <p class="menu-item__desc">保護者の方の同伴をお願いいたします。約30分。</p>
+                </div>
+                <p class="menu-item__price">¥3,300</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- color -->
+          <div class="menu-list__group" id="color" data-aos="fade-up">
+            <div class="menu-list__head">
+              <span class="menu-list__head-en">Color</span>
+              <span class="menu-list__head-ja">カラー</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">
+                    オーガニックカラー<span class="menu-item__tag">Popular</span>
+                  </p>
+                  <p class="menu-item__desc">
+                    低刺激の薬剤で地肌にやさしく。白髪染めも同料金です。約90分。
+                  </p>
+                </div>
+                <p class="menu-item__price">¥8,800<small> 〜</small></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">イルミナカラー</p>
+                  <p class="menu-item__desc">ブリーチなしで透明感のある発色。約100分。</p>
+                </div>
+                <p class="menu-item__price">¥11,000<small> 〜</small></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">ハイライト / バレイヤージュ</p>
+                  <p class="menu-item__desc">立体感と伸びてもきれいな境目をデザイン。約150分。</p>
+                </div>
+                <p class="menu-item__price">¥16,500<small> 〜</small></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">リタッチカラー（根元3cmまで）</p>
+                  <p class="menu-item__desc">前回来店より2ヶ月以内の方が対象です。約70分。</p>
+                </div>
+                <p class="menu-item__price">¥6,600</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- perm -->
+          <div class="menu-list__group" id="perm" data-aos="fade-up">
+            <div class="menu-list__head">
+              <span class="menu-list__head-en">Perm</span>
+              <span class="menu-list__head-ja">パーマ / 縮毛矯正</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">クリープパーマ</p>
+                  <p class="menu-item__desc">弱酸性の薬剤でやわらかい質感に。約120分。</p>
+                </div>
+                <p class="menu-item__price">¥12,100<small> 〜</small></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">
+                    メンズツイストスパイラル<span class="menu-item__tag">Men's</span>
+                  </p>
+                  <p class="menu-item__desc">動きと束感の出るメンズ専用パーマ。約120分。</p>
+                </div>
+                <p class="menu-item__price">¥13,200<small> 〜</small></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">
+                    縮毛矯正（全体）<span class="menu-item__tag">要相談</span>
+                  </p>
+                  <p class="menu-item__desc">
+                    ダメージ状態により施術可否をご相談させていただきます。約180分。
+                  </p>
+                </div>
+                <p class="menu-item__price">¥19,800<small> 〜</small></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">前髪・部分ストレート</p>
+                  <p class="menu-item__desc">気になる部分だけを自然な直毛に。約60分。</p>
+                </div>
+                <p class="menu-item__price">¥6,600</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- spa -->
+          <div class="menu-list__group" id="spa" data-aos="fade-up">
+            <div class="menu-list__head">
+              <span class="menu-list__head-en">Spa</span>
+              <span class="menu-list__head-ja">ヘッドスパ / トリートメント</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">炭酸ヘッドスパ（20分）</p>
+                  <p class="menu-item__desc">毛穴の皮脂汚れをオフし、頭皮環境をリセット。</p>
+                </div>
+                <p class="menu-item__price">¥4,400</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">
+                    リラクゼーションスパ（40分）<span class="menu-item__tag">Popular</span>
+                  </p>
+                  <p class="menu-item__desc">首・肩のマッサージ付き。眠ってしまう方が多数です。</p>
+                </div>
+                <p class="menu-item__price">¥7,700</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">髪質改善トリートメント</p>
+                  <p class="menu-item__desc">内部補修と表面保護の4ステップ。約45分。</p>
+                </div>
+                <p class="menu-item__price">¥8,800</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__body">
+                  <p class="menu-item__name">クイックトリートメント</p>
+                  <p class="menu-item__desc">他メニューと同時施術限定。約10分。</p>
+                </div>
+                <p class="menu-item__price">¥2,200</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ coupon ============ -->
+      <section class="l-section l-section--light">
+        <div class="l-container">
+          <div class="section-title section-title--center" data-aos="fade-up">
+            <span class="section-title__num">02</span>
+            <span class="section-title__en">Coupon</span>
+            <span class="section-title__ja">おすすめクーポン</span>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="feature-card">
+                <span class="feature-card__num">First Visit</span>
+                <span class="feature-card__icon"><i class="bi bi-stars"></i></span>
+                <h3 class="feature-card__title">初回限定 20% OFF</h3>
+                <p class="feature-card__text">
+                  カット＋カラー ¥15,400 → <strong>¥12,320</strong><br />
+                  ご予約時に「初回クーポン希望」とお伝えください。
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-card">
+                <span class="feature-card__num">Weekday</span>
+                <span class="feature-card__icon"><i class="bi bi-clock-history"></i></span>
+                <h3 class="feature-card__title">平日14時までの特典</h3>
+                <p class="feature-card__text">
+                  カット＋炭酸ヘッドスパ ¥11,000 → <strong>¥8,800</strong><br />
+                  月・水・木・金の14時までのご来店が対象です。
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-card">
+                <span class="feature-card__num">Repeat</span>
+                <span class="feature-card__icon"><i class="bi bi-arrow-repeat"></i></span>
+                <h3 class="feature-card__title">2ヶ月以内のご来店</h3>
+                <p class="feature-card__text">
+                  トリートメントを<strong>半額</strong>でご提供。<br />
+                  きれいな状態をキープしたい方におすすめです。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p class="section-title__lead text-center mt-4 mx-auto" data-aos="fade-up">
+            ※クーポンの併用はできません。詳細はご予約時にお問い合わせください。
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ reserve ============ -->
+      <section class="reserve">
+        <div class="l-container" data-aos="fade-up">
+          <p class="reserve__en">Reservation</p>
+          <p class="reserve__ja">ご予約・お問い合わせ</p>
+          <div class="reserve__actions">
+            <a class="btn-alto btn-alto--accent" href="contact.html">
+              <i class="bi bi-calendar-check"></i>
+              <span>Web Reserve</span>
+            </a>
+            <a class="btn-alto" href="tel:0312345678">
+              <i class="bi bi-telephone"></i>
+              <span>Tel Reserve</span>
+            </a>
+          </div>
+          <a class="reserve__tel" href="tel:0312345678">03-1234-5678</a>
+          <p class="reserve__note">受付時間 11:00 - 20:00 / 火曜定休</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ footer ============ -->
+    <footer class="footer">
+      <div class="l-container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <a class="footer__logo logo" href="index.html">
+              <span class="logo__mark">ALTO</span>
+              <span class="logo__sub">HAIR SALON SHIBUYA</span>
+            </a>
+            <address class="footer__address">
+              〒150-0042 東京都渋谷区宇田川町2-3-4 ALTO BLDG 3F<br />
+              TEL. <a href="tel:0312345678">03-1234-5678</a><br />
+              平日 11:00 - 21:00 / 土日祝 10:00 - 20:00<br />
+              定休日：毎週火曜日・第3月曜日
+            </address>
+            <div class="footer__sns">
+              <a class="footer__sns-link" href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a class="footer__sns-link" href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+              <a class="footer__sns-link" href="#" aria-label="TikTok"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+              <a class="footer__sns-link" href="#" aria-label="LINE"><i class="bi bi-line"></i></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 offset-lg-1">
+            <p class="footer__title">Menu</p>
+            <ul class="footer__list">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="index.html#concept">コンセプト</a></li>
+              <li><a href="menu.html">メニュー・料金</a></li>
+              <li><a href="index.html#gallery">スタイルギャラリー</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <p class="footer__title">Information</p>
+            <ul class="footer__list">
+              <li><a href="stylist.html">スタイリスト</a></li>
+              <li><a href="index.html#access">サロン情報・アクセス</a></li>
+              <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+              <li><a href="contact.html#faq">よくあるご質問</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2026 ALTO hair salon. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="pagetop" id="js-pagetop" href="#" aria-label="ページ上部へ戻る">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

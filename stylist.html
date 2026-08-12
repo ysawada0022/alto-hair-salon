@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>スタイリスト｜ALTO（アルト）東京・渋谷のヘアサロン</title>
+    <meta
+      name="description"
+      content="ALTO（アルト）に在籍するスタイリストのご紹介。得意なスタイル、経歴、指名料金、出勤日についてご案内します。"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Oswald:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.1/dist/css/yakuhanjp.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="no-js">
+    <!-- ============ header ============ -->
+    <header class="header" id="js-header">
+      <div class="header__inner">
+        <a class="header__logo logo" href="index.html">
+          <span class="logo__mark">ALTO</span>
+          <span class="logo__sub">HAIR SALON SHIBUYA</span>
+        </a>
+
+        <nav class="header__nav gnav" id="js-gnav" aria-label="グローバルナビゲーション">
+          <ul class="gnav__list">
+            <li class="gnav__item" style="--i: 1"><a class="gnav__link" href="index.html">Home</a></li>
+            <li class="gnav__item" style="--i: 2">
+              <a class="gnav__link" href="index.html#concept">Concept</a>
+            </li>
+            <li class="gnav__item" style="--i: 3"><a class="gnav__link" href="menu.html">Menu</a></li>
+            <li class="gnav__item" style="--i: 4">
+              <a class="gnav__link" href="index.html#gallery">Style</a>
+            </li>
+            <li class="gnav__item" style="--i: 5">
+              <a class="gnav__link gnav__link--current" href="stylist.html">Stylist</a>
+            </li>
+            <li class="gnav__item" style="--i: 6">
+              <a class="gnav__link" href="index.html#access">Salon</a>
+            </li>
+            <li class="gnav__item" style="--i: 7">
+              <a class="gnav__link" href="contact.html">Reserve</a>
+            </li>
+          </ul>
+
+          <div class="gnav__foot">
+            <a class="gnav__tel" href="tel:0312345678">03-1234-5678</a>
+            <p class="gnav__note">受付 11:00 - 20:00 / 火曜定休</p>
+            <a class="btn-alto btn-alto--accent" href="contact.html"><span>Reserve</span></a>
+          </div>
+        </nav>
+
+        <div class="header__actions">
+          <a class="header__tel" href="tel:0312345678">
+            <span class="header__tel-number">03-1234-5678</span>
+            <span class="header__tel-note">11:00 - 20:00 / 火曜定休</span>
+          </a>
+          <a class="header__cta btn-alto btn-alto--accent btn-alto--sm" href="contact.html">
+            <span>Reserve</span>
+          </a>
+          <button
+            class="drawer-toggle"
+            id="js-drawer-toggle"
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+            aria-controls="js-gnav"
+          >
+            <span class="drawer-toggle__bar"></span>
+            <span class="drawer-toggle__bar"></span>
+            <span class="drawer-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ page head ============ -->
+      <div
+        class="page-head"
+        style="
+          background-image: url('assets/img/photo-1580618672591-eb180b1a973f.jpg');
+        "
+      >
+        <div class="page-head__inner">
+          <h1 class="page-head__en">Stylist</h1>
+          <span class="page-head__ja">スタイリスト</span>
+        </div>
+      </div>
+
+      <nav class="breadcrumb-alto" aria-label="パンくずリスト">
+        <div class="l-container">
+          <ol class="breadcrumb-alto__list">
+            <li class="breadcrumb-alto__item"><a href="index.html">HOME</a></li>
+            <li class="breadcrumb-alto__item" aria-current="page">STYLIST</li>
+          </ol>
+        </div>
+      </nav>
+
+      <!-- ============ intro ============ -->
+      <section class="l-section l-section--tight">
+        <div class="l-container--narrow" data-aos="fade-up">
+          <div class="section-title section-title--center mb-4">
+            <span class="section-title__num">01</span>
+            <span class="section-title__en">Our Team</span>
+            <span class="section-title__ja">スタッフ紹介</span>
+          </div>
+          <p class="concept__text text-center">
+            ALTO は、カウンセリングから仕上げまでを一人のスタイリストが担当するマンツーマン制です。<br />
+            はじめての方は、なりたいイメージに近いスタイリストをお選びください。
+            迷われる場合は「おまかせ」でのご予約も承ります。
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ stylist detail ============ -->
+      <section class="l-section l-section--tight">
+        <div class="l-container">
+          <!-- 01 -->
+          <article class="row g-5 align-items-center mb-5 pb-4" data-aos="fade-up">
+            <div class="col-lg-5">
+              <div class="stylist-card__figure">
+                <img
+                  class="stylist-card__image"
+                  src="assets/img/photo-1681097561932-36d0df02b379.jpg"
+                  alt="オーナースタイリスト 綾瀬 悠"
+                  loading="lazy"
+                />
+                <span class="stylist-card__role">Owner</span>
+              </div>
+            </div>
+            <div class="col-lg-7 ps-lg-5">
+              <div class="section-title mb-4">
+                <span class="section-title__num">01</span>
+                <span class="section-title__en">Yu Ayase</span>
+                <span class="section-title__ja">綾瀬 悠 / オーナースタイリスト</span>
+              </div>
+              <p class="concept__text">
+                表参道のサロンで12年間ディレクターを務め、2016年に ALTO を開業。
+                「10年後も似合う髪」を合言葉に、骨格・毛流れ・生活リズムから逆算したカットを提案します。
+                ヘアショーやセミナー講師としても活動。
+              </p>
+              <table class="info-table mt-4">
+                <tbody>
+                  <tr class="info-table__row">
+                    <th class="info-table__head" scope="row">Skill</th>
+                    <td class="info-table__data">骨格補正カット / メンズショート / 大人ショート</td>
+                  </tr>
+                  <tr class="info-table__row">
+                    <th class="info-table__head" scope="row">Fee</th>
+                    <td class="info-table__data">指名料 ¥2,200</td>
+                  </tr>
+                  <tr class="info-table__row">
+                    <th class="info-table__head" scope="row">Shift</th>
+                    <td class="info-table__data">月・水・木・金・土・日</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="stylist-card__tags mt-3">
+                <span class="stylist-card__tag">#骨格補正カット</span>
+                <span class="stylist-card__tag">#メンズショート</span>
+                <span class="stylist-card__tag">#ハンサムショート</span>
+              </div>
+              <a class="btn-alto btn-alto--sm mt-4" href="contact.html">
+                <span>Reserve Yu</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article
+            class="row g-5 align-items-center mb-5 pb-4 flex-lg-row-reverse"
+            data-aos="fade-up"
+          >
+            <div class="col-lg-5">
+              <div class="stylist-card__figure">
+                <img
+                  class="stylist-card__image"
+                  src="assets/img/photo-1575250900466-48f9f225fcf8.jpg"
+                  alt="スタイリスト 藤原 咲希"
+                  loading="lazy"
+                />
+                <span class="stylist-card__role">Stylist</span>
+              </div>
+            </div>
+            <div class="col-lg-7 pe-lg-5">
+              <div class="section-title mb-4">
+                <span class="section-title__num">02</span>
+                <span class="section-title__en">Saki Fujiwara</span>
+                <span class="section-title__ja">藤原 咲希 / スタイリスト</span>
+              </div>
+              <p class="concept__text">
+                2026年7月より ALTO に加入。カラーメーカーの認定エデュケーター資格を持ち、
+                ブリーチを使わない透明感カラーを得意としています。
+                色落ちまで計算した配合で、次回来店まできれいな色を保ちます。
+              </p>
+              <table class="info-table mt-4">
+                <tbody>
+                  <tr class="info-table__row">
+                    <th class="info-table__head" scope="row">Skill</th>
+                    <td class="info-table__data">透明感カラー / ハイライト / 髪質改善</td>
+                  </tr>
+                  <tr class="info-table__row">
+                    <th class="info-table__head" scope="row">Fee</th>
+                    <td class="info-table__data">指名料 ¥1,100</td>
+                  </tr>
+                  <tr class="info-table__row">
+                    <th class="info-table__head" scope="row">Shift</th>
+                    <td class="info-table__data">水・木・金・土・日</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="stylist-card__tags mt-3">
+                <span class="stylist-card__tag">#透明感カラー</span>
+                <span class="stylist-card__tag">#バレイヤージュ</span>
+                <span class="stylist-card__tag">#髪質改善</span>
+              </div>
+              <a class="btn-alto btn-alto--sm mt-4" href="contact.html">
+                <span>Reserve Saki</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article class="row g-5 align-items-center" data-aos="fade-up">
+            <div class="col-lg-5">
+              <div class="stylist-card__figure">
+                <img
+                  class="stylist-card__image"
+                  src="assets/img/photo-1686543972602-da0c7ea61ce2.jpg"
+                  alt="スタイリスト 桐山 廉"
+                  loading="lazy"
+                />
+                <span class="stylist-card__role">Stylist</span>
+              </div>
+            </div>
+            <div class="col-lg-7 ps-lg-5">
+              <div class="section-title mb-4">
+                <span class="section-title__num">03</span>
+                <span class="section-title__en">Ren Kiriyama</span>
+                <span class="section-title__ja">桐山 廉 / スタイリスト</span>
+              </div>
+              <p class="concept__text">
+                毛髪診断士の資格を持ち、頭皮環境の改善からアプローチするヘッドスパが人気。
+                短時間で決まるメンズスタイルの提案も得意で、仕事帰りのお客様から支持を集めています。
+              </p>
+              <table class="info-table mt-4">
+                <tbody>
+                  <tr class="info-table__row">
+                    <th class="info-table__head" scope="row">Skill</th>
+                    <td class="info-table__data">メンズカット / ヘッドスパ / 頭皮ケア</td>
+                  </tr>
+                  <tr class="info-table__row">
+                    <th class="info-table__head" scope="row">Fee</th>
+                    <td class="info-table__data">指名料 ¥1,100</td>
+                  </tr>
+                  <tr class="info-table__row">
+                    <th class="info-table__head" scope="row">Shift</th>
+                    <td class="info-table__data">月・火以外の全日</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="stylist-card__tags mt-3">
+                <span class="stylist-card__tag">#メンズカット</span>
+                <span class="stylist-card__tag">#ヘッドスパ</span>
+                <span class="stylist-card__tag">#頭皮ケア</span>
+              </div>
+              <a class="btn-alto btn-alto--sm mt-4" href="contact.html">
+                <span>Reserve Ren</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ recruit ============ -->
+      <section class="l-section l-section--black">
+        <div class="l-container--narrow text-center" data-aos="fade-up">
+          <div class="section-title section-title--center">
+            <span class="section-title__num">02</span>
+            <span class="section-title__en">Recruit</span>
+            <span class="section-title__ja">採用情報</span>
+          </div>
+          <p class="concept__text">
+            ALTO では、一緒に働くスタイリスト・アシスタントを募集しています。<br />
+            完全週休2日制／時短勤務相談可／技術講習はすべて営業時間内に実施しています。
+          </p>
+          <a class="btn-alto mt-4" href="contact.html">
+            <span>Contact Us</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ reserve ============ -->
+      <section class="reserve">
+        <div class="l-container" data-aos="fade-up">
+          <p class="reserve__en">Reservation</p>
+          <p class="reserve__ja">ご予約・お問い合わせ</p>
+          <div class="reserve__actions">
+            <a class="btn-alto btn-alto--accent" href="contact.html">
+              <i class="bi bi-calendar-check"></i>
+              <span>Web Reserve</span>
+            </a>
+            <a class="btn-alto" href="tel:0312345678">
+              <i class="bi bi-telephone"></i>
+              <span>Tel Reserve</span>
+            </a>
+          </div>
+          <a class="reserve__tel" href="tel:0312345678">03-1234-5678</a>
+          <p class="reserve__note">受付時間 11:00 - 20:00 / 火曜定休</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ footer ============ -->
+    <footer class="footer">
+      <div class="l-container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <a class="footer__logo logo" href="index.html">
+              <span class="logo__mark">ALTO</span>
+              <span class="logo__sub">HAIR SALON SHIBUYA</span>
+            </a>
+            <address class="footer__address">
+              〒150-0042 東京都渋谷区宇田川町2-3-4 ALTO BLDG 3F<br />
+              TEL. <a href="tel:0312345678">03-1234-5678</a><br />
+              平日 11:00 - 21:00 / 土日祝 10:00 - 20:00<br />
+              定休日：毎週火曜日・第3月曜日
+            </address>
+            <div class="footer__sns">
+              <a class="footer__sns-link" href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a class="footer__sns-link" href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+              <a class="footer__sns-link" href="#" aria-label="TikTok"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+              <a class="footer__sns-link" href="#" aria-label="LINE"><i class="bi bi-line"></i></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 offset-lg-1">
+            <p class="footer__title">Menu</p>
+            <ul class="footer__list">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="index.html#concept">コンセプト</a></li>
+              <li><a href="menu.html">メニュー・料金</a></li>
+              <li><a href="index.html#gallery">スタイルギャラリー</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <p class="footer__title">Information</p>
+            <ul class="footer__list">
+              <li><a href="stylist.html">スタイリスト</a></li>
+              <li><a href="index.html#access">サロン情報・アクセス</a></li>
+              <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+              <li><a href="contact.html#faq">よくあるご質問</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2026 ALTO hair salon. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="pagetop" id="js-pagetop" href="#" aria-label="ページ上部へ戻る">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

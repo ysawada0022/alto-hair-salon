@@ -1,0 +1,7 @@
+{
+    "name": "portfolio/alto-hair-salon",
+    "description": "ALTO (hair salon portfolio piece). Static HTML served by Heroku's PHP buildpack.",
+    "type": "project",
+    "license": "proprietary",
+    "require": {}
+}

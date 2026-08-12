@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ご予約・お問い合わせ｜ALTO（アルト）東京・渋谷のヘアサロン</title>
+    <meta
+      name="description"
+      content="ALTO（アルト）のご予約・お問い合わせフォーム。WEBまたはお電話にて承ります。よくあるご質問も掲載しています。"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Oswald:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.1/dist/css/yakuhanjp.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="no-js">
+    <!-- ============ header ============ -->
+    <header class="header" id="js-header">
+      <div class="header__inner">
+        <a class="header__logo logo" href="index.html">
+          <span class="logo__mark">ALTO</span>
+          <span class="logo__sub">HAIR SALON SHIBUYA</span>
+        </a>
+
+        <nav class="header__nav gnav" id="js-gnav" aria-label="グローバルナビゲーション">
+          <ul class="gnav__list">
+            <li class="gnav__item" style="--i: 1"><a class="gnav__link" href="index.html">Home</a></li>
+            <li class="gnav__item" style="--i: 2">
+              <a class="gnav__link" href="index.html#concept">Concept</a>
+            </li>
+            <li class="gnav__item" style="--i: 3"><a class="gnav__link" href="menu.html">Menu</a></li>
+            <li class="gnav__item" style="--i: 4">
+              <a class="gnav__link" href="index.html#gallery">Style</a>
+            </li>
+            <li class="gnav__item" style="--i: 5">
+              <a class="gnav__link" href="stylist.html">Stylist</a>
+            </li>
+            <li class="gnav__item" style="--i: 6">
+              <a class="gnav__link" href="index.html#access">Salon</a>
+            </li>
+            <li class="gnav__item" style="--i: 7">
+              <a class="gnav__link gnav__link--current" href="contact.html">Reserve</a>
+            </li>
+          </ul>
+
+          <div class="gnav__foot">
+            <a class="gnav__tel" href="tel:0312345678">03-1234-5678</a>
+            <p class="gnav__note">受付 11:00 - 20:00 / 火曜定休</p>
+            <a class="btn-alto btn-alto--accent" href="contact.html"><span>Reserve</span></a>
+          </div>
+        </nav>
+
+        <div class="header__actions">
+          <a class="header__tel" href="tel:0312345678">
+            <span class="header__tel-number">03-1234-5678</span>
+            <span class="header__tel-note">11:00 - 20:00 / 火曜定休</span>
+          </a>
+          <a class="header__cta btn-alto btn-alto--accent btn-alto--sm" href="contact.html">
+            <span>Reserve</span>
+          </a>
+          <button
+            class="drawer-toggle"
+            id="js-drawer-toggle"
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+            aria-controls="js-gnav"
+          >
+            <span class="drawer-toggle__bar"></span>
+            <span class="drawer-toggle__bar"></span>
+            <span class="drawer-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ page head ============ -->
+      <div
+        class="page-head"
+        style="
+          background-image: url('assets/img/photo-1521590832167-7bcbfaa6381f.jpg');
+        "
+      >
+        <div class="page-head__inner">
+          <h1 class="page-head__en">Reservation</h1>
+          <span class="page-head__ja">ご予約・お問い合わせ</span>
+        </div>
+      </div>
+
+      <nav class="breadcrumb-alto" aria-label="パンくずリスト">
+        <div class="l-container">
+          <ol class="breadcrumb-alto__list">
+            <li class="breadcrumb-alto__item"><a href="index.html">HOME</a></li>
+            <li class="breadcrumb-alto__item" aria-current="page">RESERVATION</li>
+          </ol>
+        </div>
+      </nav>
+
+      <!-- ============ form ============ -->
+      <section class="l-section">
+        <div class="l-container--narrow">
+          <div class="section-title" data-aos="fade-up">
+            <span class="section-title__num">01</span>
+            <span class="section-title__en">Reservation Form</span>
+            <span class="section-title__ja">ご予約フォーム</span>
+            <p class="section-title__lead">
+              ご希望日時は第2希望までご記入ください。
+              確認後、担当より24時間以内にご連絡いたします（定休日を除く）。
+            </p>
+          </div>
+
+          <div
+            class="alert alert-success text-center"
+            id="js-form-result"
+            role="status"
+            hidden
+            data-aos="fade-up"
+          >
+            <i class="bi bi-check-circle me-2"></i>
+            ご予約リクエストを受け付けました。担当より折り返しご連絡いたします。<br />
+            <small>※こちらはポートフォリオ用のデモサイトのため、実際には送信されません。</small>
+          </div>
+
+          <form class="form-alto" id="js-reserve-form" novalidate data-aos="fade-up">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label class="form-alto__label" for="name">
+                  お名前<span class="form-alto__badge">Required</span>
+                </label>
+                <input
+                  class="form-alto__control"
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="山田 花子"
+                  required
+                />
+                <div class="invalid-feedback">お名前をご入力ください。</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-alto__label" for="kana">
+                  フリガナ<span class="form-alto__badge form-alto__badge--optional">Optional</span>
+                </label>
+                <input
+                  class="form-alto__control"
+                  id="kana"
+                  name="kana"
+                  type="text"
+                  placeholder="ヤマダ ハナコ"
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-alto__label" for="tel">
+                  電話番号<span class="form-alto__badge">Required</span>
+                </label>
+                <input
+                  class="form-alto__control"
+                  id="tel"
+                  name="tel"
+                  type="tel"
+                  autocomplete="tel"
+                  placeholder="09012345678"
+                  pattern="[0-9\-]{10,14}"
+                  required
+                />
+                <div class="invalid-feedback">
+                  電話番号を半角数字（ハイフンあり・なしどちらでも可）でご入力ください。
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-alto__label" for="email">
+                  メールアドレス<span class="form-alto__badge">Required</span>
+                </label>
+                <input
+                  class="form-alto__control"
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="sample@example.com"
+                  required
+                />
+                <div class="invalid-feedback">メールアドレスの形式をご確認ください。</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-alto__label" for="menu">
+                  ご希望メニュー<span class="form-alto__badge">Required</span>
+                </label>
+                <select class="form-alto__control" id="menu" name="menu" required>
+                  <option value="">選択してください</option>
+                  <option value="cut">カット</option>
+                  <option value="cut-color">カット＋カラー</option>
+                  <option value="color">カラーのみ</option>
+                  <option value="perm">パーマ / 縮毛矯正</option>
+                  <option value="spa">ヘッドスパ / トリートメント</option>
+                  <option value="other">その他・相談したい</option>
+                </select>
+                <div class="invalid-feedback">ご希望メニューをお選びください。</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-alto__label" for="stylist">
+                  ご指名スタイリスト<span class="form-alto__badge form-alto__badge--optional"
+                    >Optional</span
+                  >
+                </label>
+                <select class="form-alto__control" id="stylist" name="stylist">
+                  <option value="">おまかせ</option>
+                  <option value="ayase">綾瀬 悠（Yu Ayase）</option>
+                  <option value="fujiwara">藤原 咲希（Saki Fujiwara）</option>
+                  <option value="kiriyama">桐山 廉（Ren Kiriyama）</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-alto__label" for="date1">
+                  第1希望日時<span class="form-alto__badge">Required</span>
+                </label>
+                <input
+                  class="form-alto__control"
+                  id="date1"
+                  name="date1"
+                  type="datetime-local"
+                  required
+                />
+                <div class="invalid-feedback">第1希望の日時をご指定ください。</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-alto__label" for="date2">
+                  第2希望日時<span class="form-alto__badge form-alto__badge--optional">Optional</span>
+                </label>
+                <input class="form-alto__control" id="date2" name="date2" type="datetime-local" />
+              </div>
+
+              <div class="col-12">
+                <label class="form-alto__label" for="message">
+                  ご要望・ご相談<span class="form-alto__badge form-alto__badge--optional"
+                    >Optional</span
+                  >
+                </label>
+                <textarea
+                  class="form-alto__control form-alto__control--textarea"
+                  id="message"
+                  name="message"
+                  placeholder="なりたいイメージ、髪のお悩み、アレルギーの有無などをご記入ください。"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-alto__footer">
+              <div class="form-alto__check mb-4">
+                <input
+                  class="form-check-input mt-0"
+                  id="agree"
+                  name="agree"
+                  type="checkbox"
+                  required
+                />
+                <label class="form-check-label" for="agree">
+                  個人情報の取り扱いに同意します<span class="form-alto__badge ms-2">Required</span>
+                </label>
+              </div>
+              <button class="btn-alto btn-alto--accent" type="submit">
+                <span>Send Request</span>
+                <i class="bi bi-send"></i>
+              </button>
+              <p class="section-title__lead mt-3 mx-auto">
+                当日・翌日のご予約はお電話（ <a href="tel:0312345678">03-1234-5678</a>
+                ）にてお願いいたします。
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ============ faq ============ -->
+      <section class="l-section l-section--light faq" id="faq">
+        <div class="l-container--narrow">
+          <div class="section-title" data-aos="fade-up">
+            <span class="section-title__num">02</span>
+            <span class="section-title__en">FAQ</span>
+            <span class="section-title__ja">よくあるご質問</span>
+          </div>
+
+          <div class="accordion" id="js-faq-accordion" data-aos="fade-up">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-1"
+                  aria-expanded="true"
+                  aria-controls="faq-1"
+                >
+                  Q. 予約なしでも施術してもらえますか？
+                </button>
+              </h3>
+              <div
+                class="accordion-collapse collapse show"
+                id="faq-1"
+                data-bs-parent="#js-faq-accordion"
+              >
+                <div class="accordion-body">
+                  A.
+                  完全予約制のため、原則としてご予約をお願いしております。空き状況によっては当日のご案内も可能ですので、まずはお電話にてお問い合わせください。
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-2"
+                  aria-expanded="false"
+                  aria-controls="faq-2"
+                >
+                  Q. 仕事帰りでも間に合いますか？
+                </button>
+              </h3>
+              <div class="accordion-collapse collapse" id="faq-2" data-bs-parent="#js-faq-accordion">
+                <div class="accordion-body">
+                  A.
+                  平日は21時まで営業（最終受付19:30）しています。カットのみであれば19:30のご予約でも当日中に仕上がります。
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-3"
+                  aria-expanded="false"
+                  aria-controls="faq-3"
+                >
+                  Q. カラー剤で頭皮がしみやすいのですが対応できますか？
+                </button>
+              </h3>
+              <div class="accordion-collapse collapse" id="faq-3" data-bs-parent="#js-faq-accordion">
+                <div class="accordion-body">
+                  A.
+                  低刺激のオーガニックカラーを標準採用しており、頭皮保護剤の併用も可能です。ご不安な方には事前のパッチテスト（無料・48時間前）もご案内しています。
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-4"
+                  aria-expanded="false"
+                  aria-controls="faq-4"
+                >
+                  Q. キャンセルはいつまでに連絡すればよいですか？
+                </button>
+              </h3>
+              <div class="accordion-collapse collapse" id="faq-4" data-bs-parent="#js-faq-accordion">
+                <div class="accordion-body">
+                  A.
+                  前日の営業時間内までにご連絡ください。当日キャンセル・無断キャンセルが続いた場合、次回以降のご予約をお断りすることがございます。
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-5"
+                  aria-expanded="false"
+                  aria-controls="faq-5"
+                >
+                  Q. 駐車場はありますか？
+                </button>
+              </h3>
+              <div class="accordion-collapse collapse" id="faq-5" data-bs-parent="#js-faq-accordion">
+                <div class="accordion-body">
+                  A.
+                  専用駐車場はございません。近隣のコインパーキングをご利用ください。3時間以上の施術の場合はサービス券をお渡ししています。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ tel cta ============ -->
+      <section class="reserve">
+        <div class="l-container" data-aos="fade-up">
+          <p class="reserve__en">Call Us</p>
+          <p class="reserve__ja">お電話でのご予約</p>
+          <a class="reserve__tel" href="tel:0312345678">03-1234-5678</a>
+          <p class="reserve__note">受付時間 11:00 - 20:00 / 火曜定休</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ footer ============ -->
+    <footer class="footer">
+      <div class="l-container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <a class="footer__logo logo" href="index.html">
+              <span class="logo__mark">ALTO</span>
+              <span class="logo__sub">HAIR SALON SHIBUYA</span>
+            </a>
+            <address class="footer__address">
+              〒150-0042 東京都渋谷区宇田川町2-3-4 ALTO BLDG 3F<br />
+              TEL. <a href="tel:0312345678">03-1234-5678</a><br />
+              平日 11:00 - 21:00 / 土日祝 10:00 - 20:00<br />
+              定休日：毎週火曜日・第3月曜日
+            </address>
+            <div class="footer__sns">
+              <a class="footer__sns-link" href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a class="footer__sns-link" href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+              <a class="footer__sns-link" href="#" aria-label="TikTok"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+              <a class="footer__sns-link" href="#" aria-label="LINE"><i class="bi bi-line"></i></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 offset-lg-1">
+            <p class="footer__title">Menu</p>
+            <ul class="footer__list">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="index.html#concept">コンセプト</a></li>
+              <li><a href="menu.html">メニュー・料金</a></li>
+              <li><a href="index.html#gallery">スタイルギャラリー</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <p class="footer__title">Information</p>
+            <ul class="footer__list">
+              <li><a href="stylist.html">スタイリスト</a></li>
+              <li><a href="index.html#access">サロン情報・アクセス</a></li>
+              <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+              <li><a href="contact.html#faq">よくあるご質問</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2026 ALTO hair salon. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="pagetop" id="js-pagetop" href="#" aria-label="ページ上部へ戻る">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
